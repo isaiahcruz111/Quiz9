@@ -10,6 +10,7 @@ public class ArrayListExamples
      a.add("three");
      
      System.out.println(a);
+     // [one, two three]
     }
     
  public static void ex2(){  
@@ -29,6 +30,14 @@ public class ArrayListExamples
      for (String a: alist){
         System.out.println(a);  
     }   
+    /*
+     one
+     two
+     three
+     one
+     two 
+     three
+     */
  }   
  
   public static void ex3(){
@@ -53,6 +62,14 @@ public class ArrayListExamples
      for (String a: alist){
         System.out.println(a);  
     }
+    /*
+     zero
+     one
+     another
+     XXX
+     three
+     four
+     */
  }  
  
   public static void ex4(){
@@ -67,6 +84,8 @@ public class ArrayListExamples
      alist.remove(2);
      
      System.out.println(alist);
+     
+     // [zero, one, three]
     }    
     
  public static void ex5(){
@@ -81,6 +100,8 @@ public class ArrayListExamples
      alist.set(2,"not two");
      
      System.out.println(alist);
+     
+     // [zero, one, not two, three]
     } 
     
     public static void ex6(){
@@ -104,6 +125,13 @@ public class ArrayListExamples
      // Does this print what you would expect? Why or why not?
      
      System.out.println(alist);
+     /*
+     [one, two, three, four, five, six]
+     [one, two, three, four, five, six]
+     [one, two, four, five, six]
+     [one, two, four, five, six]
+     [one, two, four, five]
+      */
     }  
     
 }
